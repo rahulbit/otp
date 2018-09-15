@@ -1,0 +1,22 @@
+{
+  "name": "communicationserver",
+  "version": "1.0.0",
+  "description": "api for sending emails and otp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rahul",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3",
+    "moment": "^2.22.2",
+    "mongoose": "^5.2.14",
+    "morgan": "^1.9.1",
+    "msg91-sms": "^1.0.1",
+    "nodemailer": "^4.6.8",
+    "pino": "^5.5.0",
+    "sendotp": "^1.2.9",
+    "shortid": "^2.2.13"
+  }
+}
