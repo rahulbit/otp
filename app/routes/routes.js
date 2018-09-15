@@ -18,7 +18,7 @@ module.exports.setRouter = (app) => {
     // route for sending sms
     // localhost:3000/api/v1/sendsms
     app.post(`${baseUrl1}`, controllers.Sendsms);
-   
+    app.post(`${baseUrl}/delete`, controllers.deletesendmail);
 
    
 

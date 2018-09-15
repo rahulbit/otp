@@ -161,7 +161,20 @@ let Sendsms =(req , res)=>{
 
 }
 
+let  deletesendmail =(req, res)=>{
+    emailModel.deleteMany((err, result)=>{
+        if(err)
+        {
+            let apiresponse = response.generate(true, 'internal server error', 500, null)
+            res.send(apiresponse)
+        }
 
+        else {
+            let apiresponse = response.generate(false , 'data deleted succesfully', 200 , result)
+            res.send(apiresponse)
+        }
+    })
+}
 
 
 module.exports ={
