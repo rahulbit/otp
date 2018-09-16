@@ -8,22 +8,24 @@ const otpSchema = new Schema({
         default:''
     },
 
-    messageid:{
-        type:'String',
-        default:''
-    },
+  
 
     sentTime:{
         type:"Date",
         default:''
     },
 
-    msg:{
+   otp:{
      type:'String',
      default:''
+    },
+
+    verified:{
+     type:'Boolean',
+     default :false
     }
 
 
 })
 
-mongoose.model('sms', otpSchema);
+mongoose.model('otp', otpSchema);
